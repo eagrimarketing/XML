@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Homepage_Farmer">
+
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="1">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <android.support.v7.widget.CardView android:id="@+id/add_view_crop_cardview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" app:cardCornerRadius="5dp" app:cardUseCompatPadding="true">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp" android:background="@color/colorPrimary">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:gravity="center_horizontal" android:text="Add New Crop and View Crop List" android:textColor="@android:color/white" android:textSize="20dp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <android.support.v7.widget.CardView android:id="@+id/add_view_farm_cardview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" app:cardCornerRadius="5dp" app:cardUseCompatPadding="true">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp" android:layout_weight="1" android:background="@color/Orange">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:gravity="center_horizontal" android:text="Add new Farm and View Farm List" android:textColor="@android:color/white" android:textSize="20dp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="1">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <android.support.v7.widget.CardView android:id="@+id/farmer_pending_action_cardview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" app:cardCornerRadius="5dp" app:cardUseCompatPadding="true">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp" android:layout_weight="1" android:background="@color/darkgreen">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:gravity="center_horizontal" android:text="Open Orders Status" android:textColor="@android:color/white" android:textSize="20dp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <android.support.v7.widget.CardView android:id="@+id/view_orders_cancelled_cardview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" app:cardCornerRadius="5dp" app:cardUseCompatPadding="true">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp" android:layout_weight="1" android:background="@color/Deeppurple">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:gravity="center_horizontal" android:text="Cancelled Order" android:textColor="@android:color/white" android:textSize="20dp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView android:id="@+id/view_orders_closed_cardview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" app:cardCornerRadius="5dp" app:cardUseCompatPadding="true">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="80dp" android:layout_weight="1" android:background="@color/BlueGrey">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:gravity="center_horizontal" android:text="Orders Closed" android:textColor="@android:color/white" android:textSize="20dp"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

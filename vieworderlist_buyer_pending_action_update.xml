@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/cardview_light_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+
+        <LinearLayout
+            android:id="@+id/order_acceptance_rejection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:focusable="false"
+                android:text="@string/accept_or_reject_delivery"
+                />
+            <Spinner
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Buyer_select_order_delivery_status"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:drawable/btn_dropdown">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_ratings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:focusable="false"
+                android:text="@string/Add_Rating"
+                />
+            <Spinner
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Buyer_add_rating"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:drawable/btn_dropdown">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:focusable="false"
+                android:text="@string/Add_comment"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Buyer_add_comment"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:text="@string/submit"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

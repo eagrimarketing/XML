@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/agent_pending_acceptance_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg5"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/farm_farm_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        >
+
+        <TextView
+            android:id="@+id/farm_text_farm_id"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/FarmID"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/farm_data_farm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/farm_text_farm_id"
+            android:text="test"
+            android:textColor="@color/Black"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/farm_plot_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+            android:layout_marginRight="04dp"
+            android:layout_below="@+id/farm_farm_id"
+
+        >
+        <TextView
+            android:id="@+id/farm_text_plot_num"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Plotnum"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/farm_data_plot_num"
+            android:layout_toRightOf="@+id/farm_text_plot_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="test"
+            android:textColor="@color/Black"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/farm_street_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/farm_plot_id"
+        >
+        <TextView
+            android:id="@+id/farm_text_street_name"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Streetname"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/farm_data_street_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:focusable="true"
+            android:inputType="text"
+            android:layout_toRightOf="@+id/farm_text_street_name"
+            android:text="test"
+            android:textColor="@color/Black"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/farm_village"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/farm_street_name"
+        >
+        <TextView
+            android:id="@+id/farm_text_village"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Village"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/farm_data_village"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:focusable="true"
+            android:inputType="text"
+            android:layout_toRightOf="@+id/farm_text_village"
+            android:text="test"
+            android:textColor="@color/Black"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/farm_district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/farm_village"
+        >
+        <TextView
+            android:id="@+id/farm_text_district"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/District"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/farm_data_district"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:focusable="true"
+            android:inputType="text"
+            android:layout_toRightOf="@+id/farm_text_district"
+            android:text="test"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/farm_text_state"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/farm_data_district"
+            android:text="@string/State"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/farm_data_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:focusable="true"
+            android:inputType="text"
+            android:layout_toRightOf="@+id/farm_text_state"
+            android:text="test"
+            android:textColor="@color/Black"
+            />
+    </LinearLayout>
+
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

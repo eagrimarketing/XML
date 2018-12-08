@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/cardview_light_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+
+            <LinearLayout
+                android:id="@+id/select_city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:focusable="false"
+                    android:text="@string/Select_city"
+                    />
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/select_city_spinner"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:drawable/btn_dropdown">
+                </Spinner>
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/select_shop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:focusable="false"
+                android:text="@string/Select_shop"
+                />
+            <Spinner
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_shop_spinner"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:drawable/btn_dropdown">
+            </Spinner>
+        </LinearLayout>
+
+
+            <Button
+                android:id="@+id/Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:text="@string/submit"
+                />
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

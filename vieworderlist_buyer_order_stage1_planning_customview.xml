@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/stage1_1_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg4"
+            >
+
+            <RelativeLayout
+                android:id="@+id/s1_l_cropnam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="04dp"
+                >
+
+                <TextView
+                    android:id="@+id/s1_text_cropname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/Cropname"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    />
+                <TextView
+                    android:id="@+id/s1_cropname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/s1_text_cropname"
+                    android:textColor="@color/Black"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/s1_l_orderstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="04dp"
+                android:layout_below="@+id/s1_l_cropnam"
+                >
+
+                <TextView
+                    android:id="@+id/s1_text_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/Status"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    />
+                <TextView
+                    android:id="@+id/s1_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/s1_text_status"
+                    android:textColor="@color/Black"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/s1_l_voldate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="04dp"
+                android:layout_below="@+id/s1_l_orderstatus"
+                >
+                <TextView
+                    android:id="@+id/s1_text_cropvol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/Volume"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    />
+                <TextView
+                    android:id="@+id/s1_cropvol"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/s1_text_cropvol"
+                    android:textColor="@color/Black"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/s1_l_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="04dp"
+                    android:layout_below="@+id/s1_l_voldate"
+                    >
+
+                <TextView
+                    android:id="@+id/s1_text_order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Order_date"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    />
+                <TextView
+                    android:id="@+id/s1_order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/s1_text_order_date"
+                    android:textColor="@color/Black"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/s1_l_farmernam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="04dp"
+                android:layout_below="@+id/s1_l_date"
+                >
+                <TextView
+                    android:id="@+id/s1_text_farmername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/Farmername"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    />
+                <TextView
+                    android:id="@+id/s1_farmername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/s1_text_farmername"
+                    android:textColor="@color/Black"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/s1_l_farmernum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="04dp"
+                android:layout_below="@+id/s1_l_farmernam"
+                >
+
+                <TextView
+                    android:id="@+id/s1_text_farmer_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/farmercontact"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    />
+                <TextView
+                    android:id="@+id/s1_farmer_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/s1_text_farmer_contact"
+                    android:textColor="@color/Black"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

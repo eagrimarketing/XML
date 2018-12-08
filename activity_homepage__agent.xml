@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Homepage_Agent">
+
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView android:id="@+id/agentcv_openorder_cardview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" app:cardCornerRadius="5dp" app:cardUseCompatPadding="true">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="150dp" android:layout_weight="1" android:background="@color/indigo">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:gravity="center_horizontal" android:text="Open Orders Status" android:textColor="@android:color/white" android:textSize="20dp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView android:id="@+id/agentcv_closed_orders_cardview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" app:cardCornerRadius="5dp" app:cardUseCompatPadding="true">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="150dp" android:layout_weight="1" android:background="@color/lighamber">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:gravity="center_horizontal" android:text="Closed Order" android:textColor="@android:color/white" android:textSize="20dp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView android:id="@+id/agentcv_update_details_cardview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" app:cardCornerRadius="5dp" app:cardUseCompatPadding="true">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="150dp" android:layout_weight="1" android:background="@color/Darklime">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:gravity="center_horizontal" android:text="Update Self Details" android:textColor="@android:color/white" android:textSize="20dp"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

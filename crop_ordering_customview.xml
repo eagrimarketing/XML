@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ordering_1_acceptance_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg1"
+            >
+
+    <LinearLayout
+        android:id="@+id/c_crop_order_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        >
+
+        <TextView
+            android:id="@+id/c_crop_order_text_crop_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:text="@string/Cropname"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/c_crop_order_crop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/c_crop_order_text_crop_name"
+            android:textColor="@color/Black"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c_crop_order_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="04dp"
+            android:layout_below="@+id/c_crop_order_name"
+            >
+
+        <TextView
+            android:id="@+id/c_crop_order_text_crop_grade"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Grade"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/c_crop_order_crop_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/c_crop_order_text_crop_grade"
+            android:textColor="@color/Black"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/c_crop_order_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="04dp"
+            android:layout_below="@+id/c_crop_order_grade"
+            >
+
+        <TextView
+            android:id="@+id/c_crop_order_text_crop_rate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/SalesRate"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/c_crop_order_crop_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/c_crop_order_text_crop_rate"
+            android:textColor="@color/Black"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/c_crop_order_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/c_crop_order_rate"
+        >
+
+        <TextView
+            android:id="@+id/c_crop_order_text_crop_qty"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Volume"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/c_crop_order_crop_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/c_crop_order_text_crop_qty"
+            android:textColor="@color/Black"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/c_crop_order_farmername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/c_crop_order_qty"
+        >
+        <TextView
+            android:id="@+id/c_crop_order_text_crop_farmername"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Farmername"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/c_crop_order_crop_farmername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/c_crop_order_text_crop_farmername"
+            android:textColor="@color/Black"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/c_crop_order_croprating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/c_crop_order_farmername"
+        >
+
+    <TextView
+            android:id="@+id/c_crop_order_text_crop_rating"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Croprating"
+            android:layout_toRightOf="@+id/c_crop_order_crop_farmername"
+            android:textStyle="bold"
+        android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/c_crop_order_crop_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/c_crop_order_text_crop_rating"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

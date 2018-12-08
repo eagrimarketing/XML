@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/agent_pending_acceptance_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2"
+        >
+
+
+    <RelativeLayout
+            android:id="@+id/focv_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="04dp"
+            >
+
+            <TextView
+                android:id="@+id/text_orderid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Order Id:"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                />
+            <TextView
+                android:id="@+id/focv_orderid"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_orderid"
+                android:textColor="@color/Black"
+
+                />
+
+            <TextView
+                android:id="@+id/text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Value(INR): "
+                android:layout_toRightOf="@+id/focv_orderid"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                />
+            <TextView
+                android:id="@+id/focv_ordervalue"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_value"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Stage: "
+                android:layout_toRightOf="@+id/focv_ordervalue"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                />
+            <TextView
+                android:id="@+id/focv_orderstage"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_status"
+                android:textColor="@color/Black"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/focv_rol2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="04dp"
+            android:layout_below="@+id/focv_rl1"
+            >
+            <TextView
+                android:id="@+id/text_cropname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Crop Name: "
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                />
+            <TextView
+                android:id="@+id/focv_cropname"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_cropname"
+                android:textColor="@color/Black"
+
+                />
+
+            <TextView
+                android:id="@+id/text_cropgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Grade: "
+                android:layout_toRightOf="@+id/focv_cropname"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                />
+            <TextView
+                android:id="@+id/focv_cropgrade"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_cropgrade"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:id="@+id/text_orderedqty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Order Qty: "
+                android:layout_toRightOf="@+id/focv_cropgrade"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                />
+            <TextView
+                android:id="@+id/focv_orderedqty"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_orderedqty"
+                android:textColor="@color/Black"
+                />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/focv_rol3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/focv_rol2"
+        >
+        <TextView
+            android:id="@+id/text_buyername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Buyer Name: "
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/focv_buyername"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_buyername"
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/text_buyercontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Buyer Contact: "
+            android:layout_toRightOf="@+id/focv_buyername"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/focv_buyercontact"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_buyercontact"
+            android:textColor="@color/Black"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/focv_rol4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/focv_rol3"
+        android:textColor="@color/Black"
+        >
+        <TextView
+            android:id="@+id/text_shopaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Shop Address: "
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/focv_shopaddress"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_shopaddress"
+            android:textColor="@color/Black"
+
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

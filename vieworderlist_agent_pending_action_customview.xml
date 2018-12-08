@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/agent_pending_acceptance_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2"
+        >
+
+    <LinearLayout
+        android:id="@+id/a_cropname_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        >
+
+        <TextView
+            android:id="@+id/a_text_cropname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Cropname"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/a_cropname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_text_cropname"
+            android:textColor="@color/Black"
+
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/a_cropstatus_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/a_cropname_fl"
+        >
+
+    <TextView
+            android:id="@+id/a_text_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Status"
+            android:textStyle="bold"
+        android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/a_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_text_status"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/a_vol_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/a_cropstatus_fl"
+        >
+
+       <TextView
+            android:id="@+id/a_text_cropvol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Volume"
+           android:textStyle="bold"
+           android:textColor="@color/Black"
+           />
+        <TextView
+            android:id="@+id/a_cropvol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_text_cropvol"
+            android:textColor="@color/Black"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/a_price_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/a_vol_fl"
+        >
+
+    <TextView
+            android:id="@+id/a_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+            android:text="@string/Price"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/a_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_text_price"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/a_farmername_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/a_price_fl"
+        >
+
+        <TextView
+            android:id="@+id/a_text_farmername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Farmername"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/a_farmername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_text_farmername"
+            android:textColor="@color/Black"
+            />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/a_farmernum_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/a_farmername_fl"
+        >
+
+    <TextView
+            android:id="@+id/a_text_farmer_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+            android:text="@string/farmercontact"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/a_farmer_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_text_farmer_contact"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/a_farmadd_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/a_farmernum_fl"
+        >
+        <TextView
+            android:id="@+id/a_text_farm_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Farmaddress"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/a_farm_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_text_farm_address"
+            android:textColor="@color/Black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/a_buyername_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/a_farmadd_fl"
+        >
+        <TextView
+            android:id="@+id/a_text_buyerrname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Buyername"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/a_buyername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_text_buyerrname"
+            android:textColor="@color/Black"
+
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/a_buyernum_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/a_buyername_fl"
+        >
+
+    <TextView
+            android:id="@+id/a_text_buyer_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+            android:text="@string/buyercontact"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/a_buyer_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_text_buyer_contact"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/a_buyeradd_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="04dp"
+        android:layout_below="@+id/a_buyernum_fl"
+        >
+        <TextView
+            android:id="@+id/a_text_shop_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Shoplocation"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:id="@+id/a_shop_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_text_shop_address"
+            android:textColor="@color/Black"
+            />
+    </LinearLayout>
+
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>
